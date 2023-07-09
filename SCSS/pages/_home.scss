@@ -1,0 +1,125 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+
+//HERO
+
+.section-hero {
+    background-color: v.$color-primary;
+    color: v.$color-background;
+    padding: v.$spacer;
+    height: 90vh;
+    min-height: 300px;
+
+    &__wrapp-img {
+        display: block;
+        flex: 2;
+    }
+
+    &__img {
+        display: block;
+        width: 30vw;
+        min-width: 140px;
+        max-width: 230px;
+        border-radius: 50%;
+        border: 1px solid v.$color-background;
+        margin: 0 auto 60px auto;
+        text-align: center;
+
+        @include mx.media-min(750px) {
+            margin-top: 60px;
+        }
+    }
+
+    &__content {
+        flex: 3;
+    }
+
+    @include mx.media-min(750px) {
+        display: flex;
+        gap: v.$spacer-double;
+    }
+}
+
+
+//PROJECTS
+
+.section-projects {
+    padding: v.$spacer;
+    margin: 0 auto;
+}
+
+// SKILLS
+
+.section-skills {
+    padding: v.$spacer;
+    margin: 0 auto;
+
+    &__flex {
+        margin: 0 auto;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        gap: v.$spacer-double;
+        justify-content: space-between;
+
+        @include mx.media-min(850px) {
+            flex-direction: row;
+        }
+    }
+
+
+    &__icons {
+        display: grid;
+        grid-template-columns: 62px 62px 62px;
+        gap: v.$spacer;
+        justify-content: center;
+
+
+        @include mx.media-min(600px) {
+            grid-template-columns: 62px 62px 62px 62px;
+        }
+    }
+
+    &__icon {
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+// TOOLS
+
+.section-tools {
+    padding: v.$spacer;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacer-double;
+
+
+    &__col-1-of-2 {
+
+    }
+
+    &__content {
+        color: v.$color-primary;
+        font-weight: 700;
+    }
+
+    &__wrapp-img {
+
+    }
+
+    &__img {
+        max-width: 90vw;
+        padding: v.$spacer;
+    }
+
+    @include mx.media-min(750px) {
+        flex-direction: row;
+    }
+}

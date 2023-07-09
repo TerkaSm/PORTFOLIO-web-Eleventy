@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+
+.footer {
+
+}
+
+.contacts {
+    &__icon {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

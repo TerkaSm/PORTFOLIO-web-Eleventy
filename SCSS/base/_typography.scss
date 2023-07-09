@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as v;
+
+// body .heading-primary .heading-secondary .paragraph
+
+body {
+    font-family: v.$font-body;
+    color: v.$color-background;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: v.$font-special;
+    color: v.$color-background;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading-primary {
+    font-size: clamp(2.75rem, 9vw, 4.5rem);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.heading-secondary {
+    font-size: clamp(2.25rem, 7vw, 4rem);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.heading-tertiary {
+    font-size: clamp(1.8rem, 6vw, 2.75rem);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+.paragraph {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    line-height: 2;
+    color: v.$color-background;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}

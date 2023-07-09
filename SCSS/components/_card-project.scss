@@ -1,0 +1,61 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+
+.placeholder {
+    width: 333px;
+    height: 229px;
+}
+
+.card {
+    width: 333px;
+    perspective: 150rem;
+    position: relative;
+
+    &__side {
+        height: 229px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        transition: all .8s ease;
+
+        &--back {
+            transform: rotateY(180deg);
+            background-color: v.$color-grey-dark-2;
+            border: 3px solid v.$color-background;
+            font-size: 1.2rem;
+        }
+
+    }   
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+
+    // style
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__links {
+        padding-left: 40px;
+
+        a {
+            color: v.$color-background;
+            text-transform: uppercase;
+            text-decoration: underline;
+
+            &:hover {
+                color: v.$color-primary;
+            }
+        }
+    }
+}

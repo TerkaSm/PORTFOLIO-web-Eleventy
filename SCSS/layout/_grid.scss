@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+
+.grid-img {
+    display: grid;
+    grid-template-columns: 333px;
+    gap: 1.8rem;
+    justify-content: center;
+    margin: 0 auto;
+
+    @include mx.media-min(750px) {
+        grid-template-columns: 333px 333px;
+    }
+
+    @include mx.media-min(1100px) {
+        grid-template-columns: 333px 333px 333px;
+    }
+}

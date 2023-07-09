@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+.u-center-text {
+    text-align: center !important;
+    margin: 0 auto;
+}
+
+.u-margin-bottom-small {margin-bottom: 1.5rem !important;}
+.u-margin-bottom-medium {margin-bottom: 4rem !important;}
+.u-margin-bottom-big {margin-bottom: 8rem !important;}
+
+.u-margin-left-medium {margin-left: 3.2rem !important;}
+
+.u-padding-top-small {padding-top: 2rem !important;}
+.u-padding-top-medium {padding-top: 4rem !important;}
+.u-padding-left-small {padding-left: 1.3rem !important;}
+.u-padding-left-medium {padding-left: 3.2rem !important;}
+.u-padding-bottom-small {padding-bottom: 2rem !important;}
+.u-padding-bottom-medium {padding-bottom: 4rem !important;}
+
+
+.u-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.u-background {
+    background-color: v.$color-primary;
+    width: 100vw;
+
+    &--color-tertiary {
+        background-color: v.$color-tertiary;
+    }
+
+    &--color-quartiary {
+        background-color: v.$color-quartiary;
+    }
+}

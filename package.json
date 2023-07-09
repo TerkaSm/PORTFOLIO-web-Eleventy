@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-web-eleventy",
+  "version": "1.0.0",
+  "description": "Tvorba osobního webu - portfolia - podle vlastního návrhu ve Figmě",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerkaSm/PORTFOLIO-web-Eleventy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TerkaSm/PORTFOLIO-web-Eleventy/issues"
+  },
+  "homepage": "https://github.com/TerkaSm/PORTFOLIO-web-Eleventy#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
