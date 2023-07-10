@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+
+.infographics {
+    border-left: 3px solid v.$color-background;
+    margin-left: clamp(v.$spacer, 5vw, v.$spacer-double);
+    font-family: v.$font-special-2;
+
+    &__point {
+        position: relative;
+        padding: v.$spacer;
+    }
+
+    &__icon-ellipse {
+        position: absolute;
+        top: 23px;
+        left: 0;
+        margin-left: -17px;
+        z-index: 1000;
+        min-width: 24px;
+        max-width: 31px;
+    }
+
+    &__year {
+        margin: 0 0 10px 20px;
+    }
+
+    &__label {
+        margin: 0 0 10px 20px;
+    }
+}

@@ -6,8 +6,10 @@ title: Kontakt
 <section class="section-contact u-wrapper u-padding-top-medium u-padding-bottom-medium">
     <div class="section-contact__contacts">
         <h2 class="heading-tertiary">Kontakt</h2>
-        <div class="section-contact__content">
-            <p class="paragraph section-contact__p">Tereza Smolová</p>
+        <div class="section-contact__content u-padding-bottom-medium">
+            <div class="section-contact__flex">
+                <p class="paragraph section-contact__flex-item">Tereza Smolová</p>
+            </div>
             <div class="section-contact__flex">
                 <img class="section-contact__icon" src="/icons/heroicons_phone.svg" alt="ikona telefon">
                 <p class="paragraph section-contact__flex-item">606 669 959</p>
@@ -20,20 +22,20 @@ title: Kontakt
     </div>
 
     <h3 class="heading-tertiary u-padding-left-small">Neváhejte napsat</h3>
-    <form class="form" method="post" action="">
+    <form class="form" method="post" action="https://submit-form.com/4g4dY6Rl">
         <div class="form__group">
             <label class="form__label" for="name">Jméno a příjmení</label>
-            <input class="form__input" type="text" id="name" required>
+            <input class="form__input" type="text" name="name" id="name" required>
         </div>
 
         <div class="form__group">
             <label class="form__label" for="email">Email</label>
-            <input class="form__input" type="email" id="email" required>
+            <input class="form__input" type="email" name="email" id="email" required>
         </div>
         <div class="form__group">
             <label class="form__label" for="text">Text</label>
             <textarea class="form__textarea" name="text" id="text" rows="5"></textarea>
         </div>
-        <button class="btn btn--primary">Odeslat</button>
+        <button class="btn btn--primary" type="submit">Odeslat</button>
     </form>
 </section>

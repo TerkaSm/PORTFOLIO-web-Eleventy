@@ -6,7 +6,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Baumans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Baumans&family=Dosis&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/style.css">
 
@@ -31,7 +31,7 @@
                 <ul class="mobile-nav__list">
                     <li class="mobile-nav__item"><a class="mobile-nav__link" href="/">Home</a></li>
                     <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Rozcestník</a></li>
-                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Záznam cesty</a></li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="/zaznam-cesty/">Záznam cesty</a></li>
                     <li class="mobile-nav__item"><a class="mobile-nav__link" href="/kontakt/">Kontakt</a></li>
                 </ul>
             </nav>
@@ -43,7 +43,7 @@
             <ul class="navigation__list">
                 <li class="navigation__item"><a class="navigation__link" href="/">Home</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="#">Rozcestník</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Záznam cesty</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="/zaznam-cesty/">Záznam cesty</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="/kontakt/">Kontakt</a></li>
             </ul>
         </nav>
@@ -62,7 +62,7 @@
 
     <!--Footer-->
 
-    <footer class="footer u-wrapper u-padding-top-medium u-padding-bottom-medium">
+    <footer class="footer u-wrapper">
         <div class="contacts u-center-text">
             <a class="contacts__link" href="https://www.linkedin.com/in/tereza-smolovaa/"><img class="contacts__icon" src="/icons/entypo-social_linkedin-with-circle.svg" alt="ikona LinkedIn"></a>
             <a class="contacts__link" href="https://github.com/TerkaSm"><img class="contacts__icon" src="/icons/bi_github.svg" alt="ikona GitHub"></a>
@@ -74,22 +74,22 @@
 
     <div class="popup" id="popup">
         <div class="popup__content">
-            <form class="form" method="post" action="">
+            <form class="form" method="post" action="https://submit-form.com/E2Nin5Ux">
                 <h3 class="heading-tertiary">Neváhejte napsat</h3>
                 <div class="form__group">
                     <label class="form__label" for="name">Jméno a příjmení</label>
-                    <input class="form__input" type="text" id="name" required>
+                    <input class="form__input" type="text" name="name" id="name" required>
                 </div>
         
                 <div class="form__group">
                     <label class="form__label" for="email">Email</label>
-                    <input class="form__input" type="email" id="email" required>
+                    <input class="form__input" type="email" name="email" id="email" required>
                 </div>
                 <div class="form__group">
                     <label class="form__label" for="text">Text</label>
                     <textarea class="form__textarea" name="text" id="text" rows="5"></textarea>
                 </div>
-                <button class="btn btn--dark">Odeslat</button>
+                <button class="btn btn--dark" type="submit">Odeslat</button>
             </form>
             <a class="popup__icon-close" href="/"><img src="/icons/icon-close.svg" alt="ikona zavření"></a>
         </div>

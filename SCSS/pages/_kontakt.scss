@@ -26,13 +26,10 @@
     &__icon {
         width: 30px;
         flex-shrink: 0;
+        margin-left: v.$spacer;
     }
 
     &__flex-item {
         flex-shrink: 0;
-    }
-
-    &__p {
-        display: inline-block;
     }
 }

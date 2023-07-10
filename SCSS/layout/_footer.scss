@@ -3,7 +3,8 @@
 
 
 .footer {
-
+    padding-top: clamp(2rem, 8vw, 4rem);
+    padding-bottom: clamp(2rem, 8vw, 3.8rem);
 }
 
 .contacts {

@@ -532,12 +532,12 @@ template {
   display: block;
   margin-top: 1.25rem;
   margin-bottom: 3px;
-  font-size: clamp(1.3rem, 4vw, 1.5rem);
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
   font-weight: 400;
 }
 .form__input {
   font-family: "Anonymous Pro", monospace;
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
   font-weight: 500;
   width: 100%;
   height: 2.5rem;
@@ -602,6 +602,11 @@ template {
 .popup:target .popup__content {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
+}
+
+.footer {
+  padding-top: clamp(2rem, 8vw, 4rem);
+  padding-bottom: clamp(2rem, 8vw, 3.8rem);
 }
 
 .contacts__icon:hover {
@@ -867,10 +872,33 @@ template {
 .section-contact__icon {
   width: 30px;
   flex-shrink: 0;
+  margin-left: 1.25rem;
 }
 .section-contact__flex-item {
   flex-shrink: 0;
 }
-.section-contact__p {
-  display: inline-block;
+
+.infographics {
+  border-left: 3px solid #FEF6E1;
+  margin-left: clamp(1.25rem, 5vw, 2.5rem);
+  font-family: "Dosis", sans-serif;
+}
+.infographics__point {
+  position: relative;
+  padding: 1.25rem;
+}
+.infographics__icon-ellipse {
+  position: absolute;
+  top: 23px;
+  left: 0;
+  margin-left: -17px;
+  z-index: 1000;
+  min-width: 24px;
+  max-width: 31px;
+}
+.infographics__year {
+  margin: 0 0 10px 20px;
+}
+.infographics__label {
+  margin: 0 0 10px 20px;
 }/*# sourceMappingURL=style.css.map */
