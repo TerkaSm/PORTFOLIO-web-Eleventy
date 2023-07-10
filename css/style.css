@@ -25,6 +25,7 @@ body {
 h1, h2, h3, h4 {
   font-family: "Baumans", cursive;
   color: #FEF6E1;
+  display: inline-block;
 }
 
 a {
@@ -439,6 +440,7 @@ template {
   padding: 10px 25px;
   border: 2px solid #FEF6E1;
   line-height: 1.4;
+  font-weight: 500;
 }
 .btn:hover {
   color: #032336;
@@ -447,6 +449,7 @@ template {
 }
 .btn--primary {
   color: #F56767;
+  background-color: #032336;
   border: 2px solid #F56767;
 }
 .btn--primary:hover {
@@ -529,7 +532,7 @@ template {
   display: block;
   margin-top: 1.25rem;
   margin-bottom: 3px;
-  font-size: clamp(1.3rem, 4vw, 1.6rem);
+  font-size: clamp(1.3rem, 4vw, 1.5rem);
   font-weight: 400;
 }
 .form__input {
@@ -617,6 +620,7 @@ template {
   width: 20vw;
   min-width: 120px;
   max-width: 195px;
+  padding-left: clamp(0.1rem, 2vw, 1.5rem);
 }
 
 .grid-img {
@@ -756,6 +760,7 @@ template {
   padding: 1.25rem;
   height: 90vh;
   min-height: 300px;
+  max-height: 700px;
 }
 .section-hero__wrapp-img {
   display: block;
@@ -842,4 +847,30 @@ template {
   .section-tools {
     flex-direction: row;
   }
+}
+
+.section-contact__contacts {
+  padding: 1.25rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 850px) {
+  .section-contact__content {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+  }
+}
+.section-contact__flex {
+  display: flex;
+  gap: 1.25rem;
+}
+.section-contact__icon {
+  width: 30px;
+  flex-shrink: 0;
+}
+.section-contact__flex-item {
+  flex-shrink: 0;
+}
+.section-contact__p {
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

@@ -3,4 +3,37 @@ layout: hlavni-sablona.njk
 title: Kontakt
 ---
 
+<section class="section-contact u-wrapper u-padding-top-medium u-padding-bottom-medium">
+    <div class="section-contact__contacts">
+        <h2 class="heading-tertiary">Kontakt</h2>
+        <div class="section-contact__content">
+            <p class="paragraph section-contact__p">Tereza Smolová</p>
+            <div class="section-contact__flex">
+                <img class="section-contact__icon" src="/icons/heroicons_phone.svg" alt="ikona telefon">
+                <p class="paragraph section-contact__flex-item">606 669 959</p>
+            </div>
+            <div class="section-contact__flex">
+                <img class="section-contact__icon" src="/icons/clarity_email-line.svg" alt="ikona email">
+                <p class="paragraph section-contact__flex-item">framboiseart@email.cz</p>
+            </div>
+        </div>
+    </div>
 
+    <h3 class="heading-tertiary u-padding-left-small">Neváhejte napsat</h3>
+    <form class="form" method="post" action="">
+        <div class="form__group">
+            <label class="form__label" for="name">Jméno a příjmení</label>
+            <input class="form__input" type="text" id="name" required>
+        </div>
+
+        <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" required>
+        </div>
+        <div class="form__group">
+            <label class="form__label" for="text">Text</label>
+            <textarea class="form__textarea" name="text" id="text" rows="5"></textarea>
+        </div>
+        <button class="btn btn--primary">Odeslat</button>
+    </form>
+</section>

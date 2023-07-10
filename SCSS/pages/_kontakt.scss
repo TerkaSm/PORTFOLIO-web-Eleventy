@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+
+.section-contact {
+
+    &__contacts {
+        padding: v.$spacer;
+        margin: 0 auto;
+    }
+
+    &__content {
+
+        @include mx.media-min(850px) {
+            display: flex;
+            gap: v.$spacer;
+            justify-content: center;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        gap: v.$spacer;
+    }
+
+    &__icon {
+        width: 30px;
+        flex-shrink: 0;
+    }
+
+    &__flex-item {
+        flex-shrink: 0;
+    }
+
+    &__p {
+        display: inline-block;
+    }
+}
