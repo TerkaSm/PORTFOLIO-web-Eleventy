@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Baumans&family=Dosis&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>{{ title }}</title>
+</head>
+<body>
+
+        {% include 'partials/header.njk' %}
+
+    <!--Main-->
+
+    <main>
+
+
+        {{ content | safe }}
+
+    
+    </main>
+
+
+        {% include 'partials/footer.njk' %}
+
+
+        {% include 'partials/popup.njk' %}
+    
+
+</body>
+</html>
