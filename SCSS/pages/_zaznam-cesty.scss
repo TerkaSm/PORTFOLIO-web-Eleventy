@@ -2,6 +2,14 @@
 @use '../abstracts/mixins' as mx;
 
 
+.section-recording-yourney {
+    padding: v.$spacer;
+}
+
+.section-infographics {
+    padding: v.$spacer;
+}
+
 .infographics {
     border-left: 3px solid v.$color-background;
     margin-left: clamp(v.$spacer, 5vw, v.$spacer-double);
@@ -10,11 +18,18 @@
     &__point {
         position: relative;
         padding: v.$spacer;
+        margin: 0 auto;
+
+        @include mx.media-min(650px) {
+            display: grid;
+            grid-template-columns: 8rem 20rem;
+            justify-content: start;
+        }
     }
 
     &__icon-ellipse {
         position: absolute;
-        top: 23px;
+        top: 20px;
         left: 0;
         margin-left: -17px;
         z-index: 1000;
@@ -23,10 +38,20 @@
     }
 
     &__year {
-        margin: 0 0 10px 20px;
+        margin: 0 0 8px v.$spacer;
     }
 
     &__label {
-        margin: 0 0 10px 20px;
+        margin: 0 0 8px v.$spacer;
+    }
+
+    &__colored-part {
+        color: v.$color-secondary;
+    }
+
+    &__small-part {
+        margin: 0 0 8px v.$spacer;
+        font-size: 1.1rem;
+        grid-column: 2 / 3;
     }
 }

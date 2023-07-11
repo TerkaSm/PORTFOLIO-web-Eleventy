@@ -39,7 +39,7 @@ a {
 }
 
 .heading-secondary {
-  font-size: clamp(2.25rem, 7vw, 4rem);
+  font-size: clamp(2.25rem, 7vw, 3.5rem);
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -107,6 +107,9 @@ a {
 .u-wrapper {
   max-width: 1080px;
   margin: 0 auto;
+}
+.u-wrapper--small {
+  max-width: 700px;
 }
 
 .u-background {
@@ -878,6 +881,14 @@ template {
   flex-shrink: 0;
 }
 
+.section-recording-yourney {
+  padding: 1.25rem;
+}
+
+.section-infographics {
+  padding: 1.25rem;
+}
+
 .infographics {
   border-left: 3px solid #FEF6E1;
   margin-left: clamp(1.25rem, 5vw, 2.5rem);
@@ -886,10 +897,18 @@ template {
 .infographics__point {
   position: relative;
   padding: 1.25rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 650px) {
+  .infographics__point {
+    display: grid;
+    grid-template-columns: 8rem 20rem;
+    justify-content: start;
+  }
 }
 .infographics__icon-ellipse {
   position: absolute;
-  top: 23px;
+  top: 20px;
   left: 0;
   margin-left: -17px;
   z-index: 1000;
@@ -897,8 +916,16 @@ template {
   max-width: 31px;
 }
 .infographics__year {
-  margin: 0 0 10px 20px;
+  margin: 0 0 8px 1.25rem;
 }
 .infographics__label {
-  margin: 0 0 10px 20px;
+  margin: 0 0 8px 1.25rem;
+}
+.infographics__colored-part {
+  color: #F56767;
+}
+.infographics__small-part {
+  margin: 0 0 8px 1.25rem;
+  font-size: 1.1rem;
+  grid-column: 2/3;
 }/*# sourceMappingURL=style.css.map */
