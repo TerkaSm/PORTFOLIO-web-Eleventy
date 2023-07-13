@@ -104,6 +104,10 @@ a {
   padding-bottom: 4rem !important;
 }
 
+.u-padding-bottom-large {
+  padding-bottom: 8rem !important;
+}
+
 .u-wrapper {
   max-width: 1080px;
   margin: 0 auto;
@@ -521,6 +525,73 @@ template {
   color: #032336;
 }
 
+.hide {
+  display: none;
+}
+
+.filter-toggle {
+  font-weight: 700;
+  color: white;
+  background-color: #032336;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid white;
+  border-radius: 30px;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+.filter-toggle--1 {
+  color: #5EB9EF;
+  border: 2px solid #5EB9EF;
+}
+.filter-toggle--1:hover, .filter-toggle--1:active {
+  color: #032336;
+  background-color: #5EB9EF;
+}
+.filter-toggle--2 {
+  color: #F0531E;
+  border: 2px solid #F0531E;
+}
+.filter-toggle--2:hover, .filter-toggle--2:active {
+  color: #032336;
+  background-color: #F0531E;
+}
+.filter-toggle--3 {
+  color: #FEC619;
+  border: 2px solid #FEC619;
+}
+.filter-toggle--3:hover, .filter-toggle--3:active {
+  color: #032336;
+  background-color: #FEC619;
+}
+.filter-toggle--4 {
+  color: #e3509a;
+  border: 2px solid #e3509a;
+}
+.filter-toggle--4:hover, .filter-toggle--4:active {
+  color: #032336;
+  background-color: #e3509a;
+}
+.filter-toggle--5 {
+  color: #888;
+  border: 2px solid #888;
+}
+.filter-toggle--5:hover, .filter-toggle--5:active {
+  color: #032336;
+  background-color: #888;
+}
+.filter-toggle--6 {
+  color: #817FE2;
+  border: 2px solid #817FE2;
+}
+.filter-toggle--6:hover, .filter-toggle--6:active {
+  color: #032336;
+  background-color: #817FE2;
+}
+
+.links {
+  display: none;
+}
+
 .form {
   width: 100%;
   max-width: 450px;
@@ -922,10 +993,12 @@ template {
 .waymarker-grid__icon {
   margin-top: 1.8rem;
   text-align: center;
+  height: 80px;
 }
 .waymarker-grid__label {
   margin: 0;
   padding: 1.8rem 0;
+  font-weight: 400;
 }
 
 .section-recording-yourney {

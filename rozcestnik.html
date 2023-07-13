@@ -6,26 +6,36 @@ title: záznam cesty
 
 <section class="section-waymarker u-wrapper u-padding-top-medium u-padding-bottom-medium">
     <h1 class="heading-secondary">Rozcestník studenta</h1>
-    <p class="paragraph u-margin-left-medium">Tady najdeš odkazy na všechny mé oblíbené weby, co se nějak váží k frontendu, kam často "chodím" pro informace a také obíbené online nástroje.</p>
+    <div class="u-padding-top-medium">
+        <p class="paragraph u-margin-left-medium">Tady najdeš odkazy na všechny mé oblíbené weby, co se nějak váží k frontendu, kam často "chodím" pro informace a také obíbené online nástroje.</p>
+    </div>
+    <div class="filters u-padding-top-medium">
+        <button data-tag="html" id="filter-html" class="filter-toggle filter-toggle--1">HTML</button>
+        <button data-tag="css" id="filter-css" class="filter-toggle filter-toggle--2">CSS</button>
+        <button data-tag="javascript" id="filter-JavaScript" class="filter-toggle filter-toggle--3">JavaScript</button>
+        <button data-tag="sass" id="filter-Sass" class="filter-toggle filter-toggle--4">Sass</button>
+        <button data-tag="web-design" id="filter-web-design" class="filter-toggle filter-toggle--5">Web-design</button>
+        <button data-tag="git-github" id="filter-GIT/GitHub" class="filter-toggle filter-toggle--6">GIT/GitHub</button>
+    </div>
 </section>
 
         <!--1. row-->
 
 <section class="waymarker-grid u-wrapper u-padding-bottom-medium">
     <div class="waymarker-grid__item">
-        <a class="waymarker-grid__link" href="#">
+        <a data-tag="frontend" class="waymarker-grid__link" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-frontend.svg" alt="ikona frontend"></figcaption>
             <p class="waymarker-grid__label">Frontend</p>
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a class="waymarker-grid__link" href="#">
+        <a data-tag="nastroje" class="waymarker-grid__link" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-nastroje.svg" alt="ikona design nástroje"></figcaption>
-            <p class="waymarker-grid__label">Design nástroje</p>
+            <p class="waymarker-grid__label">Nástroje</p>
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a class="waymarker-grid__link" href="#">
+        <a data-tag="kurzy" class="waymarker-grid__link" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-kurzy.svg" alt="ikona kurzy a tutoriály"></figcaption>
             <p class="waymarker-grid__label">Kurzy, tutoriály</p>
         </a>
@@ -34,19 +44,19 @@ title: záznam cesty
         <!--2. row-->
 
     <div class="waymarker-grid__item">
-        <a class="waymarker-grid__link" href="#">
+        <a data-tag="studium" class="waymarker-grid__link" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-studium.svg" alt="ikona studium"></figcaption>
             <p class="waymarker-grid__label">Studium</p>
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a class="waymarker-grid__link" href="#">
+        <a data-tag="podpora" class="waymarker-grid__link" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-podpora.svg" alt="ikona podpora"></figcaption>
             <p class="waymarker-grid__label">Podpora, motivace</p>
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a class="waymarker-grid__link" href="#">
+        <a data-tag="english" class="waymarker-grid__link" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-angličtina.svg" alt="ikona angličtina"></figcaption>
             <p class="waymarker-grid__label">English</p>
         </a>
@@ -55,21 +65,34 @@ title: záznam cesty
         <!--3. row-->
 
     <div class="waymarker-grid__item">
-        <a class="waymarker-grid__link" href="#">
+        <a data-tag="jak-zacit" class="waymarker-grid__link" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-kde-zacit.svg" alt="ikona kde začít"></figcaption>
-            <p class="waymarker-grid__label">Kde zacit</p>
+            <p class="waymarker-grid__label">Jak zacit</p>
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a class="waymarker-grid__link" href="#">
+        <a data-tag="inspirace" class="waymarker-grid__link" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-inspirace.svg" alt="ikona inspirace"></figcaption>
             <p class="waymarker-grid__label">Inspirace</p>
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a class="waymarker-grid__link" href="#">
+        <a data-tag="podcasty" class="waymarker-grid__link" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-podcasty.svg" alt="ikona podcasty"></figcaption>
             <p class="waymarker-grid__label">Podcasty</p>
         </a>
     </div>
+</section>
+
+<section class="links u-wrapper u-padding-top-medium u-padding-bottom-medium">
+    <ul id="item-list">
+        <li data-tags="html css">Položka 1</li>
+        <li data-tags="sass frontend">Položka 2</li>
+        <li data-tags="kurzy inspirace">Položka 3</li>
+        <li data-tags="javascript">Položka 4</li>
+        <li data-tags="sass css english">Položka 5</li>
+        <li data-tags="sass frontend">Položka 6</li>
+        <li data-tags="kurzy inspirace">Položka 7</li>
+        <li data-tags="jak-zacit javascript">Položka 8</li>
+      </ul>
 </section>

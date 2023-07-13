@@ -2,7 +2,6 @@
 @use 'abstracts/mixins';
 @use 'abstracts/variables';
 
-// @use 'base/animations';
 @use 'base/base';
 @use 'base/typography';
 @use 'base/utilities';
@@ -10,6 +9,7 @@
 
 @use 'components/buttons';
 @use 'components/card-project';
+@use 'components/filters';
 @use 'components/form';
 @use 'components/popup';
 
