@@ -881,6 +881,53 @@ template {
   flex-shrink: 0;
 }
 
+.section-waymarker {
+  padding: 1.25rem;
+}
+
+.waymarker-grid {
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 750px) {
+  .waymarker-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .waymarker-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.waymarker-grid__item {
+  border: 3px solid #F56767;
+}
+.waymarker-grid__item:hover, .waymarker-grid__item:focus {
+  transform: scale(1.1);
+}
+.waymarker-grid__link {
+  color: #FEF6E1;
+  font-family: "Baumans", cursive;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.waymarker-grid__icon-wrapp {
+  margin: 1.25rem auto;
+  text-align: center;
+}
+.waymarker-grid__icon {
+  margin-top: 1.8rem;
+  text-align: center;
+}
+.waymarker-grid__label {
+  margin: 0;
+  padding: 1.8rem 0;
+}
+
 .section-recording-yourney {
   padding: 1.25rem;
 }

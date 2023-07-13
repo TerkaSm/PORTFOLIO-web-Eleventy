@@ -1,4 +1,54 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as mx;
 
-//section-waymarker
+.section-waymarker {
+    padding: v.$spacer;
+}
+
+.waymarker-grid {
+    padding: v.$spacer;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    justify-content: center;
+    margin: 0 auto;
+
+    @include mx.media-min(750px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include mx.media-min(1100px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__item {
+        border: 3px solid v.$color-secondary;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+        }
+    }
+
+    &__link {
+        color: v.$color-background;
+        font-family: v.$font-special;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    &__icon-wrapp {
+        margin: v.$spacer auto;
+        text-align: center;
+    }
+
+    &__icon {
+        margin-top: 1.8rem;
+        text-align: center;
+    }
+
+    &__label {
+        margin: 0;
+        padding: 1.8rem 0;
+    }
+}
