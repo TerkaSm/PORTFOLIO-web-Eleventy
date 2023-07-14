@@ -9,21 +9,13 @@ title: záznam cesty
     <div class="u-padding-top-medium">
         <p class="paragraph u-margin-left-medium">Tady najdeš odkazy na všechny mé oblíbené weby, co se nějak váží k frontendu, kam často "chodím" pro informace a také obíbené online nástroje.</p>
     </div>
-    <div class="filters u-padding-top-medium">
-        <button data-tag="html" id="filter-html" class="filter-toggle filter-toggle--1">HTML</button>
-        <button data-tag="css" id="filter-css" class="filter-toggle filter-toggle--2">CSS</button>
-        <button data-tag="javascript" id="filter-JavaScript" class="filter-toggle filter-toggle--3">JavaScript</button>
-        <button data-tag="sass" id="filter-Sass" class="filter-toggle filter-toggle--4">Sass</button>
-        <button data-tag="web-design" id="filter-web-design" class="filter-toggle filter-toggle--5">Web-design</button>
-        <button data-tag="git-github" id="filter-GIT/GitHub" class="filter-toggle filter-toggle--6">GIT/GitHub</button>
-    </div>
 </section>
 
         <!--1. row-->
 
 <section class="waymarker-grid u-wrapper u-padding-bottom-medium">
     <div class="waymarker-grid__item">
-        <a data-tag="frontend" class="waymarker-grid__link" href="#">
+        <a data-tag="frontend" class="waymarker-grid__link filter-toggle" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-frontend.svg" alt="ikona frontend"></figcaption>
             <p class="waymarker-grid__label">Frontend</p>
         </a>
@@ -84,17 +76,26 @@ title: záznam cesty
     </div>
 </section>
 
-<section class="links u-wrapper u-padding-top-medium u-padding-bottom-medium">
-    <ul id="item-list">
-        <li data-tags="html css">Položka 1</li>
-        <li data-tags="sass frontend">Položka 2</li>
-        <li data-tags="kurzy inspirace">Položka 3</li>
-        <li data-tags="javascript">Položka 4</li>
-        <li data-tags="sass css english">Položka 5</li>
-        <li data-tags="sass frontend">Položka 6</li>
-        <li data-tags="kurzy inspirace">Položka 7</li>
-        <li data-tags="jak-zacit javascript">Položka 8</li>
-      </ul>
+<section class="tags u-wrapper">
+    <div class="filters u-padding-top-medium">
+        <button data-tag="html" id="filter-html" class="filter-toggle filter-style filter-style--1">HTML</button>
+        <button data-tag="css" id="filter-css" class="filter-toggle filter-style filter-style--2">CSS</button>
+        <button data-tag="javascript" id="filter-JavaScript" class="filter-toggle filter-style filter-style--3">JavaScript</button>
+        <button data-tag="sass" id="filter-Sass" class="filter-toggle filter-style filter-style--4">Sass</button>
+        <button data-tag="web-design" id="filter-web-design" class="filter-toggle filter-style filter-style--5">Web-design</button>
+        <button data-tag="git-github" id="filter-GIT/GitHub" class="filter-toggle filter-style filter-style--6">GIT/GitHub</button>
+    </div>
 </section>
 
-<script src="/script.js"></script>
+<section class="links u-wrapper u-padding-top-medium u-padding-bottom-medium">
+    <ul class="links__list" id="item-list">
+        <li class="links__link" data-tags="html css">Položka 1</li>
+        <li class="links__link" data-tags="sass frontend">Položka 2</li>
+        <li class="links__link" data-tags="kurzy inspirace">Položka 3</li>
+        <li class="links__link" data-tags="javascript">Položka 4</li>
+        <li class="links__link" data-tags="sass css english">Položka 5</li>
+        <li class="links__link" data-tags="sass frontend">Položka 6</li>
+        <li class="links__link" data-tags="kurzy inspirace">Položka 7</li>
+        <li class="links__link" data-tags="jak-zacit javascript">Položka 8</li>
+      </ul>
+</section>

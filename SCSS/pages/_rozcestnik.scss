@@ -6,7 +6,7 @@
 }
 
 .waymarker-grid {
-    padding: v.$spacer;
+    padding: v.$spacer-double;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.8rem;

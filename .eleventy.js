@@ -9,6 +9,32 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("flavicon")
 
+    eleventyConfig.addPassthroughCopy("scripts")
+
+    eleventyConfig.setBrowserSyncConfig({
+      callbacks: {
+        ready: function (err, browserSync) {
+          const mime = browserSync.mime;
+          mime.define({
+            'text/javascript': ['js']
+          });
+        }
+      }
+    });
+
+    return async () => {
+      let output = await esbuild.build({
+        target: 'es2020',
+        entryPoints: [path],
+        minify: true,
+        bundle: true,
+        write: false,
+      });
+    
+      return output.outputFiles[0].text;
+    }
+
+
     return {
         // možné formáty šablon
         templateFormats: ["njk", "html", "md"],
