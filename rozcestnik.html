@@ -21,13 +21,13 @@ title: záznam cesty
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a data-tag="nastroje" class="waymarker-grid__link" href="#">
+        <a data-tag="nastroje" class="waymarker-grid__link filter-toggle" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-nastroje.svg" alt="ikona design nástroje"></figcaption>
             <p class="waymarker-grid__label">Nástroje</p>
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a data-tag="kurzy" class="waymarker-grid__link" href="#">
+        <a data-tag="kurzy" class="waymarker-grid__link filter-toggle" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-kurzy.svg" alt="ikona kurzy a tutoriály"></figcaption>
             <p class="waymarker-grid__label">Kurzy, tutoriály</p>
         </a>
@@ -36,19 +36,19 @@ title: záznam cesty
         <!--2. row-->
 
     <div class="waymarker-grid__item">
-        <a data-tag="studium" class="waymarker-grid__link" href="#">
+        <a data-tag="studium" class="waymarker-grid__link filter-toggle" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-studium.svg" alt="ikona studium"></figcaption>
             <p class="waymarker-grid__label">Studium</p>
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a data-tag="podpora" class="waymarker-grid__link" href="#">
+        <a data-tag="podpora" class="waymarker-grid__link filter-toggle" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-podpora.svg" alt="ikona podpora"></figcaption>
             <p class="waymarker-grid__label">Podpora, motivace</p>
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a data-tag="english" class="waymarker-grid__link" href="#">
+        <a data-tag="english" class="waymarker-grid__link filter-toggle" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-angličtina.svg" alt="ikona angličtina"></figcaption>
             <p class="waymarker-grid__label">English</p>
         </a>
@@ -57,19 +57,19 @@ title: záznam cesty
         <!--3. row-->
 
     <div class="waymarker-grid__item">
-        <a data-tag="jak-zacit" class="waymarker-grid__link" href="#">
+        <a data-tag="jak-zacit" class="waymarker-grid__link filter-toggle" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-kde-zacit.svg" alt="ikona kde začít"></figcaption>
             <p class="waymarker-grid__label">Jak zacit</p>
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a data-tag="inspirace" class="waymarker-grid__link" href="#">
+        <a data-tag="inspirace" class="waymarker-grid__link filter-toggle" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-inspirace.svg" alt="ikona inspirace"></figcaption>
             <p class="waymarker-grid__label">Inspirace</p>
         </a>
     </div>
     <div class="waymarker-grid__item">
-        <a data-tag="podcasty" class="waymarker-grid__link" href="#">
+        <a data-tag="podcasty" class="waymarker-grid__link filter-toggle" href="#">
             <figcaption class="section-waymarker__icon-wrapp"><img class="waymarker-grid__icon" src="/icons/icon-podcasty.svg" alt="ikona podcasty"></figcaption>
             <p class="waymarker-grid__label">Podcasty</p>
         </a>
@@ -78,24 +78,29 @@ title: záznam cesty
 
 <section class="tags u-wrapper">
     <div class="filters">
-        <button data-tag="html" id="filter-html" class="filter-toggle filter-style filter-style--1">HTML</button>
-        <button data-tag="css" id="filter-css" class="filter-toggle filter-style filter-style--2">CSS</button>
-        <button data-tag="javascript" id="filter-JavaScript" class="filter-toggle filter-style filter-style--3">JavaScript</button>
-        <button data-tag="sass" id="filter-Sass" class="filter-toggle filter-style filter-style--4">Sass</button>
-        <button data-tag="web-design" id="filter-web-design" class="filter-toggle filter-style filter-style--5">Web-design</button>
-        <button data-tag="git-github" id="filter-GIT/GitHub" class="filter-toggle filter-style filter-style--6">GIT/GitHub</button>
+        <button data-tag="html" class="filter-toggle filter-style filter-style--1">HTML</button>
+        <button data-tag="css" class="filter-toggle filter-style filter-style--2">CSS</button>
+        <button data-tag="javascript" class="filter-toggle filter-style filter-style--3">JavaScript</button>
+        <button data-tag="sass" class="filter-toggle filter-style filter-style--4">Sass</button>
+        <button data-tag="web-design" class="filter-toggle filter-style filter-style--5">Web-design</button>
+        <button data-tag="git-github" class="filter-toggle filter-style filter-style--6">GIT/GitHub</button>
     </div>
 </section>
 
 <section class="links u-wrapper u-padding-top-medium u-padding-bottom-medium">
     <ul class="links__list" id="item-list">
-        <li class="links__link" data-tags="html css">Položka 1</li>
-        <li class="links__link" data-tags="sass frontend">Položka 2</li>
-        <li class="links__link" data-tags="kurzy inspirace">Položka 3</li>
-        <li class="links__link" data-tags="javascript">Položka 4</li>
-        <li class="links__link" data-tags="sass css english">Položka 5</li>
-        <li class="links__link" data-tags="sass frontend">Položka 6</li>
-        <li class="links__link" data-tags="kurzy inspirace">Položka 7</li>
-        <li class="links__link" data-tags="jak-zacit javascript">Položka 8</li>
+        <li class="links__item" data-tags="jak-zacit podpora podcasty">
+            <h3 class="links__title">Junior Guru</h3>
+            <p>Na stránce najdete skvělou příručku na cestu do IT. Dočtete se v ní vše potřebné, můžete se přidat do výborného klubu juniorů nebo si poslechnout podcast.</p>
+            <p><a class="links__a" href="https://junior.guru/">Junior Guru</a></p>
+        </li>
+        <li class="links__item" data-tags="sass frontend">Položka 2</li>
+        <li class="links__item" data-tags="kurzy inspirace">Položka 3</li>
+        <li class="links__item" data-tags="javascript">Položka 4</li>
+        <li class="links__item" data-tags="sass css english">Položka 5</li>
+        <li class="links__item" data-tags="sass frontend">Položka 6</li>
+        <li class="links__item" data-tags="kurzy inspirace">Položka 7</li>
+        <li class="links__item" data-tags="jak-zacit javascript">Položka 8</li>
+        <li class="links__item" data-tags="podpora studium">Položka 9</li>
       </ul>
 </section>

@@ -89,14 +89,33 @@
 }
 
 .links {
-    display: none; // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    padding: v.$spacer;
+    //display: none; // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    padding: v.$spacer-double;
 
     &__list {
-
+        padding-left: 0;
     }
 
-    &__link {
+    &__item {
         list-style: none;
+        border: 3px solid v.$color-secondary;
+        margin: v.$spacer 0;
+        padding: v.$spacer-double;
+    }
+
+    &__title {
+        font-family: v.$font-special-2;
+        margin: 0.5rem 0;
+    }
+
+    &__a {
+        color: v.$color-secondary;
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+            color: #7defc9;
+        }
     }
 }

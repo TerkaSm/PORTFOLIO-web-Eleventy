@@ -593,11 +593,28 @@ template {
 }
 
 .links {
-  display: none;
-  padding: 1.25rem;
+  padding: 2.5rem;
 }
-.links__link {
+.links__list {
+  padding-left: 0;
+}
+.links__item {
   list-style: none;
+  border: 3px solid #F56767;
+  margin: 1.25rem 0;
+  padding: 2.5rem;
+}
+.links__title {
+  font-family: "Dosis", sans-serif;
+  margin: 0.5rem 0;
+}
+.links__a {
+  color: #F56767;
+  text-decoration: underline;
+}
+.links__a:hover, .links__a:focus {
+  transform: scale(1.1);
+  color: #7defc9;
 }
 
 .form {
