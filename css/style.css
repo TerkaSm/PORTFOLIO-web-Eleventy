@@ -587,6 +587,14 @@ template {
   color: #032336;
   background-color: #817FE2;
 }
+.filter-style--7 {
+  color: #fd4a4a;
+  border: 2px solid #fd4a4a;
+}
+.filter-style--7:hover, .filter-style--7:active {
+  color: #032336;
+  background-color: #fd4a4a;
+}
 
 .tags {
   padding: 2.5rem;
@@ -606,6 +614,7 @@ template {
 }
 .links__title {
   font-family: "Dosis", sans-serif;
+  font-weight: 400;
   margin: 0.5rem 0;
 }
 .links__a {
@@ -614,7 +623,7 @@ template {
 }
 .links__a:hover, .links__a:focus {
   transform: scale(1.1);
-  color: #7defc9;
+  color: #E29F5B;
 }
 
 .form {

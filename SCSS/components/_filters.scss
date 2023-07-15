@@ -82,6 +82,17 @@
             background-color: #817FE2;
         }
     }
+
+    &--7 {
+        color: #fd4a4a;
+        border: 2px solid #fd4a4a;
+
+        &:hover,
+        &:active {
+            color: v.$color-primary;
+            background-color: #fd4a4a;
+        }
+    }
 }
 
 .tags {
@@ -89,7 +100,6 @@
 }
 
 .links {
-    //display: none; // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     padding: v.$spacer-double;
 
     &__list {
@@ -105,7 +115,10 @@
 
     &__title {
         font-family: v.$font-special-2;
+        font-weight: 400;
+        //text-transform: uppercase;
         margin: 0.5rem 0;
+        //border-bottom: 2px solid v.$color-secondary;
     }
 
     &__a {
@@ -115,7 +128,7 @@
         &:hover,
         &:focus {
             transform: scale(1.1);
-            color: #7defc9;
+            color: v.$color-quartiary;
         }
     }
 }
