@@ -1,5 +1,3 @@
-console.log('js funguje');
-
 const filterToggles = document.querySelectorAll('.filter-toggle');
 const itemList = document.getElementById('item-list');
 
