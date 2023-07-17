@@ -93,6 +93,17 @@
             background-color: #fd4a4a;
         }
     }
+
+    &--8 {
+        color: #5cd572;
+        border: 2px solid #5cd572;
+
+        &:hover,
+        &:active {
+            color: v.$color-primary;
+            background-color: #5cd572;
+        }
+    }
 }
 
 .tags {
@@ -116,7 +127,7 @@
     &__title {
         font-family: v.$font-special-2;
         font-weight: 400;
-        //text-transform: uppercase;
+        text-transform: uppercase;
         margin: 0.5rem 0;
         //border-bottom: 2px solid v.$color-secondary;
     }

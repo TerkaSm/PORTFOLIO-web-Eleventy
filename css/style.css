@@ -595,6 +595,14 @@ template {
   color: #032336;
   background-color: #fd4a4a;
 }
+.filter-style--8 {
+  color: #5cd572;
+  border: 2px solid #5cd572;
+}
+.filter-style--8:hover, .filter-style--8:active {
+  color: #032336;
+  background-color: #5cd572;
+}
 
 .tags {
   padding: 2.5rem;
@@ -615,6 +623,7 @@ template {
 .links__title {
   font-family: "Dosis", sans-serif;
   font-weight: 400;
+  text-transform: uppercase;
   margin: 0.5rem 0;
 }
 .links__a {
@@ -1019,6 +1028,7 @@ template {
   font-family: "Baumans", cursive;
   font-size: 1.6rem;
   text-align: center;
+  cursor: pointer;
 }
 .waymarker-grid__icon-wrapp {
   margin: 1.25rem auto;
