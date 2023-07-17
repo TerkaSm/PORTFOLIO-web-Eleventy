@@ -521,8 +521,8 @@ template {
   text-transform: uppercase;
   text-decoration: underline;
 }
-.card__links a:hover {
-  color: #032336;
+.card__links a:hover, .card__links a:active {
+  color: #E29F5B;
 }
 
 .hide {
@@ -993,6 +993,9 @@ template {
 }
 .section-contact__flex-item {
   flex-shrink: 0;
+}
+.section-contact__link {
+  color: #FEF6E1;
 }
 
 .section-waymarker {

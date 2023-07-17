@@ -53,8 +53,9 @@
             text-transform: uppercase;
             text-decoration: underline;
 
-            &:hover {
-                color: v.$color-primary;
+            &:hover, 
+            &:active {
+                color: v.$color-quartiary;
             }
         }
     }

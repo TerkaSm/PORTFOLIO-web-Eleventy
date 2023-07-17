@@ -32,4 +32,8 @@
     &__flex-item {
         flex-shrink: 0;
     }
+
+    &__link {
+        color: v.$color-background;
+    }
 }
