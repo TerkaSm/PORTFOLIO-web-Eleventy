@@ -490,6 +490,7 @@ template {
   position: relative;
 }
 .card__side {
+  height: 229px;
   position: absolute;
   top: 0;
   left: 0;
