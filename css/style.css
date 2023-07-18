@@ -1056,6 +1056,7 @@ template {
   border-left: 3px solid #FEF6E1;
   margin-left: clamp(1.25rem, 5vw, 2.5rem);
   font-family: "Dosis", sans-serif;
+  font-size: 1.4rem;
 }
 .infographics__point {
   position: relative;
@@ -1065,7 +1066,7 @@ template {
 @media screen and (min-width: 650px) {
   .infographics__point {
     display: grid;
-    grid-template-columns: 8rem 20rem;
+    grid-template-columns: 8.3rem 23rem;
     justify-content: start;
   }
 }
@@ -1075,8 +1076,8 @@ template {
   left: 0;
   margin-left: -17px;
   z-index: 1000;
-  min-width: 24px;
-  max-width: 31px;
+  min-width: 22px;
+  max-width: 30px;
 }
 .infographics__year {
   margin: 0 0 8px 1.25rem;
