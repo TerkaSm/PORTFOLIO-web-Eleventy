@@ -485,12 +485,11 @@ template {
 }
 
 .card {
-  width: 333px;
+  width: 328px;
   perspective: 150rem;
   position: relative;
 }
 .card__side {
-  height: 229px;
   position: absolute;
   top: 0;
   left: 0;
@@ -526,12 +525,8 @@ template {
   color: #E29F5B;
 }
 
-.hide {
-  display: none;
-}
-
 .filter-style {
-  font-weight: 700;
+  font-weight: 500;
   color: white;
   background-color: #032336;
   padding: 0.5rem 1.25rem;
@@ -597,12 +592,12 @@ template {
   background-color: #fd4a4a;
 }
 .filter-style--8 {
-  color: #5cd572;
-  border: 2px solid #5cd572;
+  color: #39cb54;
+  border: 2px solid #39cb54;
 }
 .filter-style--8:hover, .filter-style--8:active {
   color: #032336;
-  background-color: #5cd572;
+  background-color: #39cb54;
 }
 
 .tags {
@@ -617,7 +612,7 @@ template {
 }
 .links__item {
   list-style: none;
-  border: 3px solid #F56767;
+  border: 2px solid #E29F5B;
   margin: 1.25rem 0;
   padding: 2.5rem;
 }
@@ -628,12 +623,12 @@ template {
   margin: 0.5rem 0;
 }
 .links__a {
-  color: #F56767;
+  color: #E29F5B;
   text-decoration: underline;
 }
 .links__a:hover, .links__a:focus {
   transform: scale(1.1);
-  color: #E29F5B;
+  color: #F56767;
 }
 
 .form {
@@ -755,12 +750,12 @@ template {
 }
 @media screen and (min-width: 750px) {
   .grid-img {
-    grid-template-columns: 333px 333px;
+    grid-template-columns: 328px 328px;
   }
 }
 @media screen and (min-width: 1100px) {
   .grid-img {
-    grid-template-columns: 333px 333px 333px;
+    grid-template-columns: 328px 328px 328px;
   }
 }
 
@@ -1022,7 +1017,7 @@ template {
   }
 }
 .waymarker-grid__item {
-  border: 3px solid #F56767;
+  border: 2px solid #F56767;
 }
 .waymarker-grid__item:hover, .waymarker-grid__item:focus {
   transform: scale(1.1);

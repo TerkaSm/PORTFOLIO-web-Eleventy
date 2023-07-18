@@ -10,10 +10,10 @@
     margin: 0 auto;
 
     @include mx.media-min(750px) {
-        grid-template-columns: 333px 333px;
+        grid-template-columns: 328px 328px;
     }
 
     @include mx.media-min(1100px) {
-        grid-template-columns: 333px 333px 333px;
+        grid-template-columns: 328px 328px 328px;
     }
 }

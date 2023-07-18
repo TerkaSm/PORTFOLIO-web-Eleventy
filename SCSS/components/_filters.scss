@@ -3,12 +3,10 @@
 
 
 
-.hide {
-    display: none;
-  }
+
 
 .filter-style {
-    font-weight: 700;
+    font-weight: 500;
     color: white;
     background-color: v.$color-primary;
     padding: .5rem v.$spacer;
@@ -95,13 +93,13 @@
     }
 
     &--8 {
-        color: #5cd572;
-        border: 2px solid #5cd572;
+        color: #39cb54;
+        border: 2px solid #39cb54;
 
         &:hover,
         &:active {
             color: v.$color-primary;
-            background-color: #5cd572;
+            background-color: #39cb54;
         }
     }
 }
@@ -119,7 +117,7 @@
 
     &__item {
         list-style: none;
-        border: 3px solid v.$color-secondary;
+        border: 2px solid v.$color-quartiary;
         margin: v.$spacer 0;
         padding: v.$spacer-double;
     }
@@ -133,13 +131,13 @@
     }
 
     &__a {
-        color: v.$color-secondary;
+        color: v.$color-quartiary;
         text-decoration: underline;
 
         &:hover,
         &:focus {
             transform: scale(1.1);
-            color: v.$color-quartiary;
+            color: v.$color-secondary;
         }
     }
 }
