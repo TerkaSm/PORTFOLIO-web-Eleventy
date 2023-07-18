@@ -23,9 +23,10 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Baumans", cursive;
+  font-family: "Baumans", sans-serif;
   color: #FEF6E1;
   display: inline-block;
+  line-height: 1.1;
 }
 
 a {
@@ -439,7 +440,7 @@ template {
 
 .btn {
   display: inline-block;
-  font-family: "Baumans", cursive;
+  font-family: "Baumans", sans-serif;
   color: #FEF6E1;
   text-transform: uppercase;
   font-size: clamp(0.8rem, 2vw, 1rem);
@@ -808,7 +809,7 @@ template {
 }
 .mobile-nav__link {
   color: #FEF6E1;
-  font-family: "Baumans", cursive;
+  font-family: "Baumans", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
@@ -870,7 +871,7 @@ template {
 }
 .navigation__link {
   color: #FEF6E1;
-  font-family: "Baumans", cursive;
+  font-family: "Baumans", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   padding: 10px 10px 10px 10px;
@@ -1028,7 +1029,7 @@ template {
 }
 .waymarker-grid__link {
   color: #FEF6E1;
-  font-family: "Baumans", cursive;
+  font-family: "Baumans", sans-serif;
   font-size: 1.6rem;
   text-align: center;
   cursor: pointer;
