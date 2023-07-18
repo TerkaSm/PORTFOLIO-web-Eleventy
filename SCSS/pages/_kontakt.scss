@@ -35,5 +35,9 @@
 
     &__link {
         color: v.$color-background;
+
+        &:hover {
+            color: v.$color-secondary;
+        }
     }
 }

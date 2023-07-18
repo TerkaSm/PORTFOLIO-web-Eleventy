@@ -6,6 +6,8 @@
     display: flex;
     justify-content: space-between;
     padding: v.$spacer;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 .logo {

@@ -733,6 +733,8 @@ template {
   display: flex;
   justify-content: space-between;
   padding: 1.25rem;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -993,6 +995,9 @@ template {
 }
 .section-contact__link {
   color: #FEF6E1;
+}
+.section-contact__link:hover {
+  color: #F56767;
 }
 
 .section-waymarker {
