@@ -9,3 +9,5 @@ Ve Figmě jsem následně použila vývojářský mode pro vývoj.
 Na vývoj jsem použila technologie **HTML, preprocesor SCSS, metodiku BEM.**
 Web je plnně responzivní, použila jsem **grid, flexbox, relativní jednotky** a další responzivní techniky
 Pro web jsem vytvořila šablonu v **11ty, pomocí Nunjucks.**
+
+JavaScript jsem dala dohromady s pomocí Chat GPT (filtr na rozcestník)
