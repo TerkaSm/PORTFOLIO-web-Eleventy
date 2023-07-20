@@ -1106,4 +1106,12 @@ template {
   margin: 0 0 8px 1.25rem;
   font-size: 1.1rem;
   grid-column: 2/3;
+}
+
+.section-diary {
+  padding: 1.25rem;
+  display: none;
+}
+.section-diary__article {
+  border-top: 2px solid #F56767;
 }/*# sourceMappingURL=style.css.map */
