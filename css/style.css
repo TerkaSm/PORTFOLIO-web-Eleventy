@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -864,6 +865,9 @@ template {
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
+.navigation__item.active::before { /* Styl pro aktivní stav */
+  transform: scaleX(1);
+}
 .navigation__item:hover::before {
   transform: scaleX(1);
 }
@@ -873,6 +877,10 @@ template {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 10px 10px 10px 10px;
+}
+
+.active::before { /* Styl pro aktivní stav */
+  transform: scaleX(1);
 }
 
 .section-hero {

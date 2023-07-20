@@ -31,3 +31,22 @@ Array.from(filterButtons).forEach(function(button) {
     filterItems(tag);
   });
 });
+
+
+
+
+const navigationItems = document.querySelectorAll('.navigation__item');
+
+const whenClicked = (event) => {
+  const activeItem = document.querySelector('.navigation__item.active');
+  if (activeItem) {
+    activeItem.classList.remove('active');
+  }
+
+  event.currentTarget.classList.add('active');
+};
+
+navigationItems.forEach(item => {
+  item.addEventListener('click', whenClicked);
+});
+

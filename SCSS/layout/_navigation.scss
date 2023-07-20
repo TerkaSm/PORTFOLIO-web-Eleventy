@@ -37,6 +37,10 @@
             transition: transform 0.3s ease-in-out;
         }
 
+        &.active::before { /* Styl pro aktivní stav */
+            transform: scaleX(1);
+          }
+
         &:hover::before {
             transform: scaleX(1);
         }
@@ -50,3 +54,7 @@
         padding: 10px 10px 10px 10px;
     }
 }
+
+.active::before { /* Styl pro aktivní stav */
+    transform: scaleX(1);
+  }
