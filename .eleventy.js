@@ -11,6 +11,12 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("scripts")
 
+    // Přidání passthrough pro soubory .txt
+    eleventyConfig.addPassthroughCopy("*.txt");
+
+    // Přidání passthrough pro soubory .xml
+    eleventyConfig.addPassthroughCopy("*.xml");
+
     eleventyConfig.setBrowserSyncConfig({
       callbacks: {
         ready: function (err, browserSync) {
