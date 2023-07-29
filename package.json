@@ -11,9 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/TerkaSm/PORTFOLIO-web-Eleventy.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["studium frontendu", "studium kódování webů", "rekvalifikace do IT", "studium HTML, CSS, JS", "cesta do IT", "kodérka webů", "kodér webů" ],
+  "author": "Tereza Smolová",
+  "license": "",
   "bugs": {
     "url": "https://github.com/TerkaSm/PORTFOLIO-web-Eleventy/issues"
   },
