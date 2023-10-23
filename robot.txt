@@ -1,2 +1,4 @@
+Sitemap: https://denik-studentky-frontendu/sitemap.xml
+
 User-agent: *
 Disallow: /tajny-obsah/
