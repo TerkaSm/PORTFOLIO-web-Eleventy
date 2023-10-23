@@ -1110,7 +1110,6 @@ template {
 
 .section-diary {
   padding: 1.25rem;
-  display: none;
 }
 .section-diary__article {
   border-top: 2px solid #F56767;
