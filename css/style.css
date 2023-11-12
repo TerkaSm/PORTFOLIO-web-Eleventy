@@ -962,7 +962,7 @@ template {
   min-width: 140px;
   max-width: 230px;
   border-radius: 50%;
-  border: 1px solid #FEF6E1;
+  border: 3px solid #FEF6E1;
   margin: 0 auto 60px auto;
   text-align: center;
 }
