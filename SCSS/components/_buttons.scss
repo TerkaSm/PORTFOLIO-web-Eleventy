@@ -11,11 +11,12 @@
     border: 2px solid v.$color-background;
     line-height: 1.4;
     font-weight: 500;
+    transition: all 0.4s ease-out;
+
 
     &:hover {
         color: v.$color-primary;
         border: 2px solid v.$color-primary;
-        transform: scale(1.1);
     }
 
 
@@ -29,7 +30,6 @@
             background-color: v.$color-secondary;
             border: 2px solid v.$color-secondary;
             font-weight: 700;
-            transform: scale(1.1);
         }
     }
 
@@ -42,7 +42,6 @@
             color: v.$color-quartiary;
             background-color: v.$color-primary;
             border: 2px solid v.$color-primary;
-            transform: scale(1.1);
         }
     }
 

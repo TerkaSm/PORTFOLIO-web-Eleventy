@@ -454,7 +454,7 @@ template {
   border: 2px solid #FEF6E1;
   line-height: 1.4;
   font-weight: 500;
-  transition: all 0.4s ease-out;
+  transition: background-color 0.3s ease-out;
 }
 .btn:hover {
   color: #032336;
@@ -464,6 +464,7 @@ template {
   color: #F56767;
   background-color: #032336;
   border: 2px solid #F56767;
+  transition: background-color 0.3s ease;
 }
 .btn--primary:hover {
   color: #032336;
@@ -475,6 +476,7 @@ template {
   color: #032336;
   border: 2px solid #032336;
   background-color: #E29F5B;
+  transition: background-color 0.3s ease;
 }
 .btn--dark:hover {
   color: #E29F5B;
