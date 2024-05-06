@@ -1037,6 +1037,7 @@ template {
 }
 .section-tools__img {
   max-width: 100%;
+  height: auto;
   padding: 1.25rem;
 }
 @media screen and (min-width: 750px) {
