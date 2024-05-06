@@ -8,20 +8,25 @@
     background-color: v.$color-primary;
     color: v.$color-background;
     padding: v.$spacer;
-    height: 90vh;
-    min-height: 300px;
-    max-height: 700px;
+    // height: 90vh;
+    min-height: 70vh;
+    // max-height: 700px;
+    display: flex;
+    flex-direction: column;
 
     &__wrapp-img {
         display: block;
         flex: 2;
+        padding: v.$spacer;
     }
 
     &__img {
         display: block;
-        width: 30vw;
-        min-width: 140px;
-        max-width: 230px;
+        // width: 30vw;
+        // min-width: 140px;
+        // max-width: 100%;
+        max-width: 100%;
+        height: auto;
         border-radius: 50%;
         border: 3px solid v.$color-background;
         margin: 0 auto 60px auto;
@@ -37,7 +42,7 @@
     }
 
     @include mx.media-min(750px) {
-        display: flex;
+        flex-direction: row;
         gap: v.$spacer-double;
     }
 }
@@ -98,12 +103,13 @@
     padding: v.$spacer;
     margin: 0 auto;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: v.$spacer-double;
 
 
     &__col-1-of-2 {
-
+        flex: 60%;
     }
 
     &__content {
@@ -112,11 +118,11 @@
     }
 
     &__wrapp-img {
-
+        flex: 40%;
     }
 
     &__img {
-        max-width: 90vw;
+        max-width: 100%;
         padding: v.$spacer;
     }
 

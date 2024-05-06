@@ -448,6 +448,7 @@ template {
   font-family: "Baumans", sans-serif;
   color: #FEF6E1;
   text-transform: uppercase;
+  text-align: center;
   font-size: clamp(0.8rem, 2vw, 1rem);
   letter-spacing: 0.3125rem;
   padding: 10px 25px;
@@ -946,19 +947,19 @@ template {
   background-color: #032336;
   color: #FEF6E1;
   padding: 1.25rem;
-  height: 90vh;
-  min-height: 300px;
-  max-height: 700px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
 }
 .section-hero__wrapp-img {
   display: block;
   flex: 2;
+  padding: 1.25rem;
 }
 .section-hero__img {
   display: block;
-  width: 30vw;
-  min-width: 140px;
-  max-width: 230px;
+  max-width: 100%;
+  height: auto;
   border-radius: 50%;
   border: 3px solid #FEF6E1;
   margin: 0 auto 60px auto;
@@ -974,7 +975,7 @@ template {
 }
 @media screen and (min-width: 750px) {
   .section-hero {
-    display: flex;
+    flex-direction: row;
     gap: 2.5rem;
   }
 }
@@ -1020,15 +1021,22 @@ template {
   padding: 1.25rem;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 2.5rem;
+}
+.section-tools__col-1-of-2 {
+  flex: 60%;
 }
 .section-tools__content {
   color: #032336;
   font-weight: 700;
 }
+.section-tools__wrapp-img {
+  flex: 40%;
+}
 .section-tools__img {
-  max-width: 90vw;
+  max-width: 100%;
   padding: 1.25rem;
 }
 @media screen and (min-width: 750px) {
